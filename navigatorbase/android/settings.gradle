@@ -1,0 +1,3 @@
+rootProject.name = 'navigatorbase'
+
+include ':app'
