@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redux Ruter Example</title>
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_qPoEzvCB8SYeHzpeIgNDsAc8cS0GMEQ">
+    </script>
+    
+  </head>
+  <body>
+     <script type="text/javascript">
+      function initmap() {
+        var mapOptions = {
+        center: { lat: 42.872, lng: 3.644},
+        zoom: 3        
+        };
+        var map = new google.maps.Map(document.getElementById('example'),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initmap);
+      
+     </script>
+
+    <div style="width:600px; height:600px" id="example"></div>
+
+    <!-- <script type="text/javascript" src="assets/main.js"></script> -->
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` in this folder.
+      To create a production bundle, use `npm run build`.
+    -->
+  </body>
+</html>
